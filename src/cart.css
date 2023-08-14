@@ -1,0 +1,59 @@
+.cart-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:15px;
+}
+
+.cart-container > img{
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+}
+.cart-container{
+    display: flex;
+    text-align: center;
+    border: 1px solid #D8DFDA;
+    border-radius: 10px;
+    padding:20px;
+    box-shadow: 0px 1px 7px 2px rgba(0, 0, 0, 0.2);
+    width: 500px;
+}
+.details{
+    margin: auto;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.details > input{
+    width:50px;
+    height:50px;
+    text-align: center;
+    vertical-align: center;
+    padding: 0;
+    border-radius: 50%;
+    border: 1px solid #D8DFDA;
+    box-sizing: border-box;
+    margin-left:10px;
+    margin-right:10px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.details > button{
+    all: unset;
+    font-size: 25px;
+    cursor: pointer;
+
+}
+.details >.decrease-btn{
+    color:hotpink;
+}
+.details > .increase-btn{
+    color: #007FFF;
+}

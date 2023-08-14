@@ -1,0 +1,194 @@
+body{
+    overflow-x: hidden;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.content, .root{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+/*NAVBAR*/
+nav > ul{
+    font-size: 18px;
+    display: flex;
+    gap:30px;
+    justify-content: end;
+    padding-right: 70px;
+    padding-bottom:20px;
+    border-bottom: 2px solid #D8DFDA;
+    list-style: none;
+}
+nav > ul > li> a{
+    color:black;
+    text-decoration: none;
+}
+
+.cartIcon{
+    border-radius: 6px;
+    background-color: #007FFF;
+    box-sizing: border-box;
+    padding: 3px 8px;
+}
+.cartIcon > a{
+    color:whitesmoke;
+}
+.shopIcon{
+    padding:3px 8px;
+}
+
+/*SHOP*/
+.productContainer > img{
+    width:296px;
+    height: 300px;
+    object-fit: cover;
+    color:blueviolet;
+    margin-bottom: 0;
+}
+.productContainer{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    box-sizing: border-box; 
+    margin-bottom:50px;
+}
+.productContainer > h3,p,button{
+    margin-top: 1px;
+    margin-bottom:5px;
+}
+
+.productContainer > button{
+    border-radius: 10px;
+    background-color: #007FFF;
+    border:2px solid #007FFF;
+    color:white;
+    cursor: pointer;
+}
+
+.shop{
+    display: flex;
+    justify-content: flex-start;
+    gap: 50px;
+    flex-wrap: wrap;
+    padding-left: 60px;
+}
+
+.storeName{
+    text-align: center;
+    font-size: 90px;
+    font-family:'Times New Roman', Times, serif;
+    margin-bottom:120px;
+    color:	#181818;
+}
+
+/* CATEGORIES */
+.categories{
+    display: flex;
+    justify-content: center;
+    gap:20px;
+}
+.categories >button{
+    margin-top:30px;
+    color: black;
+    border:none;
+    border-radius: 5px;
+    font-size: 20px;
+    padding:6px;
+    margin-bottom: 80px;
+    cursor: pointer;
+}
+.categories >button:focus{
+    background-color: #fd5c63;
+    color: white;
+}
+.filteredProducts{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left:200px;
+}
+
+/*Footer */
+/* Footer Container */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0;
+    width:100%;
+    margin-left: none !important;
+}
+
+/* Footer Content */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+}
+
+.footer-section {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.footer h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* Social Icons */
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icon {
+    color: #fff;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.social-icon:hover {
+    color: #fd5c63;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 1000px) {
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .footer-section {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .shop{
+        justify-content: center;
+    }
+    .storeName{
+        font-size: 4rem;
+    }
+}
+@media screen and (max-width: 637px){
+    .cart-container{
+        flex-direction: column;
+        align-items: center;
+       max-width: 20rem;
+    }
+}
+
+
+
+
+/* CART FOOTER */
+.cart-main{
+    min-height: calc(100vh - 300px);
+    margin-bottom: 4rem;
+}
